@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro - Sesi Senai</title>
+    <style>
+        /* Resetando margens e preenchimentos */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Centralização do conteúdo na página */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            display: flex;
+            justify-content: center;  /* Centraliza horizontalmente */
+            align-items: center;      /* Centraliza verticalmente */
+            height: 100vh;            /* Faz o corpo ocupar toda a altura da tela */
+            margin: 0;                /* Remove margens padrão */
+            flex-direction: column;   /* Organiza os elementos na vertical */
+        }
+
+        /* Estilos para o cabeçalho (nav) */
+        nav {
+            background-color: #333;
+            color: white;
+            padding: 15px;
+            width: 100%;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        /* Estilos para o menu */
+        .menu {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .menu a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            padding: 8px 16px;
+            background-color: #555;
+            border-radius: 5px;
+        }
+
+        .menu a:hover {
+            background-color: #777;
+        }
+
+        /* Estilos para o formulário */
+        .form-container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 400px;   /* Limita a largura máxima do formulário */
+        }
+
+        .form-container h2 {
+            font-size: 18px;
+            margin-bottom: 8px;
+        }
+
+        .form-container input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            font-size: 16px;
+        }
+
+        .form-container button {
+            width: 100%;
+            padding: 10px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .form-container button:hover {
+            background-color: #218838;
+        }
+
+    </style>
+</head>
+<body>
+
+    <nav>
+        <h1>Sesi Senai Cadastro Usuarios</h1>
+    </nav>
+
+    <!-- Menu -->
+    <div class="menu">
+        <a href="#Cadastro Usuarios">Cadastro Usuarios</a>
+        <a href="cad_tar.html">Cadastro taref</a>
+        <a href="cad_tar.html">Cadastro de Tarefas</a>
+    </div>
+
+    <!-- Formulário de Cadastro -->
+    <div class="form-container">
+        <form action="#" method="POST">
+            <h2>Nome</h2>
+            <input type="text" name="Nome" placeholder="Digite seu Nome completo" required>
+
+            <h2>E-mail</h2>
+            <input type="email" name="e-mail" placeholder="Digite seu e-mail" required>
+
+            <h2>Senha</h2>
+            <input type="password" name="senha" placeholder="Digite sua senha" required>
+
+            <button type="submit">Cadastrar</button>
+        </form>
+    </div>
+
+</body>
+</html>
